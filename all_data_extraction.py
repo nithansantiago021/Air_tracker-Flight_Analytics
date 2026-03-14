@@ -15,7 +15,7 @@ HEADERS = {"x-rapidapi-key": API_KEY, "x-rapidapi-host": "aerodatabox.p.rapidapi
 # Data
 from_time = "2026-03-07T08:00"
 to_time = "2026-03-07T20:00"
-iata_list = ["DEL","BLR","DXB","HKG","HND","SYD","SFO","JFK","CGH","LHR","CDG","JNB"]
+iata_list = ["DEL","BLR","DXB","HKG","HND","SYD","SFO","JFK","CGH","LHR","CDG","JNB","SIN"]
 
 db_config = {
     "host": os.getenv("DB_HOST"),
