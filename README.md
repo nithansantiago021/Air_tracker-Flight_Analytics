@@ -41,8 +41,7 @@ cd Global-Flight-Analytics-dashboard
 ```bash
 pip install -r requirements.txt
 ```
-**3. Configure the Database:**
-  - Execute the `schema.sql` file in your MySQL environment to build the normalised tables.
+**3. Configure Connection to SQL:**
   - update the database connection credentials in your python script or `.env` file
 
 **4. Run the Streamlit Application:**
