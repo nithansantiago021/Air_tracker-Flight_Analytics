@@ -28,21 +28,22 @@ This is a part of GUVI DS project it is designed to assist aviation enthusiasts,
 ```bash
 Project_1 /
 │
-├── streamlit_app.py          # Main entry point for the dashboard
-├── requirements.txt          # List of Python dependencies (pandas, streamlit, sqlalchemy, etc.)
-├── .env                      # API keys and Database credentials (ignored by git)
+├── streamlit_app.py          # Main entry point (Imports from src.components)
+├── requirements.txt          # Dependencies (pandas, streamlit, sqlalchemy, etc.)
+├── .env                      # API keys and Database credentials (create it in the root folder)
+├── .gitignore                # Prevents .env and __pycache__ from being uploaded
 │
-├── src/                      # Core logic and processing
-│   ├── __init__.py
-│   ├── pipeline.py           # Orchestrates the full ETL (Extract, Transform, Load) process
-│   ├── database.py           # MySQL connection setup and SQLAlchemy engines
-│   ├── queries.py            # SQL queries for data retrieval and cleaning
-│   └── components/               # UI modules for the Streamlit dashboard
-│       ├── __init__.py
-│       ├── maps.py               # Map-based visualizations (Plotly)
-│       ├── tab1.py               # Flight status and general statistics
-│       ├── tab2.py               # Carrier performance and delays
-│       └── tab3.py               # Route analysis and airport insights
+└── src/                      # All Source Code
+    ├── __init__.py           # Makes 'src' a package
+    ├── pipeline.py           # ETL logic (API -> Cleaning -> MySQL)
+    ├── database.py           # Database connection logic
+    ├── queries.py            # SQL queries for fetching data
+    └── components/           # UI modules (nested inside src)
+        ├── __init__.py       # Makes 'components' a sub-package
+        ├── maps.py           # Map visualizations
+        ├── tab1.py           # UI for Tab 1
+        ├── tab2.py           # UI for Tab 2
+        └── tab3.py           # UI for Tab 3
 ```
 
 ---
