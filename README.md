@@ -43,7 +43,6 @@ Project_1 /
 │       ├── tab1.py               # Flight status and general statistics
 │       ├── tab2.py               # Carrier performance and delays
 │       └── tab3.py               # Route analysis and airport insights
-
 ```
 
 ---
